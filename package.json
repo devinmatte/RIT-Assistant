@@ -1,0 +1,17 @@
+{
+  "name": "rit-assistant",
+  "description": "Creating an tool for RIT students, with Google Assistant",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "author": "Devin Matte",
+  "engines": {
+    "node": "~4.2"
+  },
+  "dependencies": {
+    "actions-on-google": "^1.0.0"
+  },
+  "devDependencies": {
+    "semistandard": "^9.1.0"
+  }
+}
