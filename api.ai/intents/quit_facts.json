@@ -1,0 +1,80 @@
+{
+  "userSays": [
+    {
+      "id": "7480a4ec-36a0-4004-81f4-5bd47d7fc205",
+      "data": [
+        {
+          "text": "No"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "f154050f-54b8-4173-aef0-dfc297a849a3",
+      "data": [
+        {
+          "text": "I don\u0027t want to hear any more"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9d0d5d2e-fd77-42f3-a023-f851eec4576e",
+      "data": [
+        {
+          "text": "Nevermind"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "e7c42f10-b1c2-49c2-9dab-e1946e1f3ab6",
+      "data": [
+        {
+          "text": "Quit"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6372633b-85b4-4d50-a95a-1aeae6fb4a79",
+      "data": [
+        {
+          "text": "Thanks"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "9c34a7d6-d9d4-4ddf-96b0-0ced82679c95",
+  "name": "quit_facts",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": [
+            "Okay, thanks for listening!",
+            "I hope you learned something interesting! Have a great day!",
+            "Okay! Bye!"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

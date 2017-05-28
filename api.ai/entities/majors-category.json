@@ -1,0 +1,18 @@
+{
+  "id": "a81ac9c0-795b-4f3f-89f7-7ffe55c65c51",
+  "name": "majors-category",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "majors",
+      "synonyms": [
+        "majors",
+        "major",
+        "majors at rit",
+        "rit majors"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

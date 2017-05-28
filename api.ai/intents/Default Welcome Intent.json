@@ -1,0 +1,45 @@
+{
+  "userSays": [],
+  "id": "22d39f1d-fb6a-4148-b709-0239bd382096",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "suggestions": [
+            {
+              "title": "Trivia"
+            },
+            {
+              "title": "Majors"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "speech": "Welcome to R.I.T Assistant! How can I help you?"
+        }
+      ],
+      "defaultResponsePlatforms": [
+        "google"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}

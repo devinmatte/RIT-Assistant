@@ -1,0 +1,190 @@
+{
+  "userSays": [
+    {
+      "id": "24545413-d91c-43c2-84f8-75cde3d24e70",
+      "data": [
+        {
+          "text": "Facts about RIT",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "c9e13f87-bc47-424a-bb58-5967741ae79e",
+      "data": [
+        {
+          "text": "tell me some "
+        },
+        {
+          "text": "trivia",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "9c857264-fe28-4942-ad12-2b5856c970cb",
+      "data": [
+        {
+          "text": "trivia",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "5c0ca84e-8e50-4d41-ba93-a9c05e98adda",
+      "data": [
+        {
+          "text": "The "
+        },
+        {
+          "text": "history of",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        },
+        {
+          "text": " RIT"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "2fed865e-df7d-47cc-9ad1-d600b23a3b1e",
+      "data": [
+        {
+          "text": "RIT\u0027s history",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "75a5f609-c867-435d-818c-e79d3f4d3603",
+      "data": [
+        {
+          "text": "Tell me about RIT"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "69969be2-e794-4d6b-b5ce-791fe9255b81",
+      "data": [
+        {
+          "text": "I want to hear about RIT"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "fb815966-d5c3-4e84-ad28-08100e1f6da0",
+      "data": [
+        {
+          "text": "Let\u0027s hear about RIT\u0027s Past"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d024a4aa-1188-48f0-a8f6-4ad0816e740c",
+      "data": [
+        {
+          "text": "History",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "7282c2ef-b3b5-4dda-a0d0-056f39bb6399",
+      "data": [
+        {
+          "text": "I want to hear about the "
+        },
+        {
+          "text": "history",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "75f6d2c8-5bd2-45f5-b23c-cf4182825bd0",
+      "data": [
+        {
+          "text": "I want to hear about RIT"
+        },
+        {
+          "text": "\u0027s history",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "4a35cf33-e446-4b2b-a284-c70bc4dfce17",
+  "name": "choose_fact",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "tell.fact",
+      "affectedContexts": [
+        {
+          "name": "choose_fact-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@fact-category",
+          "name": "category",
+          "value": "$category",
+          "prompts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "d8948205-5434-498e-808c-52eab79bb7c7",
+  "name": "fact-category",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "history",
+      "synonyms": [
+        "history",
+        "past",
+        "trivia",
+        "trivia of rit",
+        "history of rit",
+        "facts",
+        "facts about rit"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}

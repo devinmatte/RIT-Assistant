@@ -1,0 +1,42 @@
+{
+  "description": "Give Facts About RIT useful to an RIT Student",
+  "language": "en",
+  "enabledDomainFeatures": [
+    "smalltalk-domain-on",
+    "smalltalk-fulfillment-on"
+  ],
+  "googleAssistant": {
+    "googleAssistantCompatible": true,
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [
+      {
+        "intentId": "2a991b92-0080-4867-ae5d-e29bf4afd549",
+        "signInRequired": false
+      }
+    ],
+    "systemIntents": [],
+    "endIntentIds": [
+      "454bfaee-a914-45eb-b7d1-e77808cc6b22",
+      "9c34a7d6-d9d4-4ddf-96b0-0ced82679c95"
+    ],
+    "oAuthLinking": {
+      "required": false,
+      "grantType": "AUTH_CODE_GRANT"
+    },
+    "voiceType": "MALE_1",
+    "capabilities": [],
+    "protocolVersion": "V2"
+  },
+  "defaultTimezone": "",
+  "webhook": {
+    "url": "https://us-central1-rit-assistant.cloudfunctions.net/RITAssistant",
+    "headers": {
+      "": ""
+    },
+    "available": true,
+    "useForDomains": true
+  },
+  "isPrivate": true,
+  "customClassifierMode": "use.after",
+  "mlMinConfidence": 0.2
+}

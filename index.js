@@ -6,6 +6,7 @@ const App = require('actions-on-google').ApiAiApp;
 // API.AI actions
 const UNRECOGNIZED_DEEP_LINK = 'deeplink.unknown';
 const TELL_FACT = 'tell.fact';
+const TELL_MAJORS = 'tell.majors';
 
 // API.AI parameter names
 const CATEGORY_ARGUMENT = 'category';
@@ -124,8 +125,37 @@ What do you want to know about R.I.T?`,
                 app.ask(factPrefix + fact + NEXT_FACT_DIRECTIVE, NO_INPUTS);
             }
             return;
-        } else if (factCategory === INFORMATION_TYPE.MAJORS) {
+        } else {
+            // Conversation repair is handled in API.AI, but this is a safeguard
+            if (app.hasSurfaceCapability(app.SurfaceCapabilities.SCREEN_OUTPUT)) {
+                app.ask(app.buildRichResponse()
+                    .addSimpleResponse(`Sorry, I didn't understand. What do you want to know about R.I.T?`)
+                    .addSuggestions(['Trivia', 'Majors']), NO_INPUTS);
+            } else {
+                app.ask(`Sorry, I didn't understand. What do you want to know about R.I.T?`, NO_INPUTS);
+            }
+        }
+    }
 
+    // Say a fact
+    function majors(app) {
+
+        let factCategory = app.getArgument(CATEGORY_ARGUMENT);
+
+        if (factCategory === INFORMATION_TYPE.MAJORS) {
+            if (app.hasSurfaceCapability(app.SurfaceCapabilities.SCREEN_OUTPUT)) {
+                let image = getRandomImage(RIT_IMAGES);
+                let suggestions = ['Computer Science', 'Environmental Science'];
+                app.ask(app.buildRichResponse()
+                    .addSimpleResponse("RIT has hundreds of Majors. It would be difficult for me to just list them out. Any Specific majors you're interested in?")
+                    .addBasicCard(app.buildBasicCard("Majors at RIT")
+                        .addButton(LINK_OUT_TEXT, RIT_LINK)
+                        .setImage(image[0], image[1]))
+                    .addSuggestions(suggestions), NO_INPUTS);
+            } else {
+                app.ask("RIT has hundreds of Majors. It would be difficult for me to just list them out. Any Specific majors you're interested in?");
+            }
+            return;
         } else {
             // Conversation repair is handled in API.AI, but this is a safeguard
             if (app.hasSurfaceCapability(app.SurfaceCapabilities.SCREEN_OUTPUT)) {
@@ -154,6 +184,7 @@ ${redirectCategory} instead. `;
     let actionMap = new Map();
     actionMap.set(UNRECOGNIZED_DEEP_LINK, unhandledDeepLinks);
     actionMap.set(TELL_FACT, tellFact);
+    actionMap.set(TELL_MAJORS, majors);
 
     app.handleRequest(actionMap);
 };

@@ -1,0 +1,41 @@
+{
+  "userSays": [],
+  "id": "f056c0d3-9b7c-40a3-96da-c74d79a5cec9",
+  "name": "In Dialog Fallback",
+  "auto": false,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "suggestions": [
+            {
+              "title": "Trivia"
+            },
+            {
+              "title": "Majors"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "speech": "Sorry, I didn\u0027t understand. What do you want to know about R.I.T?"
+        }
+      ],
+      "defaultResponsePlatforms": [
+        "google"
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": true,
+  "events": []
+}

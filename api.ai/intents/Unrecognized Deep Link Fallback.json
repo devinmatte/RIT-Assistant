@@ -1,0 +1,28 @@
+{
+  "userSays": [],
+  "id": "753c8d95-1bd9-42ce-80a1-aecddd904255",
+  "name": "Unrecognized Deep Link Fallback",
+  "auto": false,
+  "contexts": [
+    "google_assistant_welcome"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "deeplink.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": true,
+  "events": []
+}

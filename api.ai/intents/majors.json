@@ -1,0 +1,111 @@
+{
+  "userSays": [
+    {
+      "id": "cfd4c29a-8ce6-4cd2-8651-e5c6647120b4",
+      "data": [
+        {
+          "text": "Majors at RIT",
+          "alias": "category",
+          "meta": "@majors-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6d8c1233-b19b-4816-a1c0-02bc6fb810fd",
+      "data": [
+        {
+          "text": "Tell me about "
+        },
+        {
+          "text": "Majors at RIT",
+          "alias": "category",
+          "meta": "@majors-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "31f0e786-185f-4250-a19e-68c951f30fc0",
+      "data": [
+        {
+          "text": "I want to learn about "
+        },
+        {
+          "text": "Majors",
+          "alias": "category",
+          "meta": "@majors-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "44102c26-2df6-4ba5-9cd4-e58f51edec0e",
+      "data": [
+        {
+          "text": "Tell me about "
+        },
+        {
+          "text": "Majors",
+          "alias": "category",
+          "meta": "@majors-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "25e94a1b-6781-4175-b5ad-1177f14f3124",
+      "data": [
+        {
+          "text": "Majors",
+          "alias": "category",
+          "meta": "@majors-category",
+          "userDefined": false
+        },
+        {
+          "text": " Please"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "788c4865-c756-47a9-8f83-2fc056e3ced6",
+  "name": "majors",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "tell.majors",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "dataType": "@majors-category",
+          "name": "category",
+          "value": "$category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
+  "fallbackIntent": false,
+  "events": []
+}
