@@ -8,6 +8,11 @@
   "engines": {
     "node": "~4.2"
   },
+  "scripts": {
+    "lint": "semistandard --fix \"**/*.js\"",
+    "start": "functions deploy RITAssistant --trigger-http",
+    "deploy": "gcloud beta functions deploy RITAssistant --trigger-http --stage-bucket rit-assistant.appspot.com"
+  },
   "dependencies": {
     "actions-on-google": "^1.0.0"
   },
