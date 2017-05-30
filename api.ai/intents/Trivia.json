@@ -167,7 +167,7 @@
     }
   ],
   "id": "4a35cf33-e446-4b2b-a284-c70bc4dfce17",
-  "name": "choose_fact",
+  "name": "Trivia",
   "auto": true,
   "contexts": [],
   "responses": [

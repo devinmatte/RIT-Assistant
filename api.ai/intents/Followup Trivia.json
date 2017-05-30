@@ -1,0 +1,97 @@
+{
+  "userSays": [
+    {
+      "id": "0e3f9860-d769-4b0f-98c9-4efaa0587b45",
+      "data": [
+        {
+          "text": "tell me more "
+        },
+        {
+          "text": "trivia",
+          "alias": "fact-category",
+          "meta": "@fact-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "6c5f5338-223d-4fff-abb6-2b4c5535ce9a",
+      "data": [
+        {
+          "text": "Tell me another "
+        },
+        {
+          "text": "fact",
+          "alias": "fact-category",
+          "meta": "@fact-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "d27224f3-bfde-4c08-bbd3-a11d7abaccb5",
+      "data": [
+        {
+          "text": "I want to hear another"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
+      "id": "62af43d4-1a18-44c5-a9d4-485f676829c2",
+      "data": [
+        {
+          "text": "tell me another"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    }
+  ],
+  "id": "606781f6-3761-447b-a769-2e9ca538b91a",
+  "parentId": "4a35cf33-e446-4b2b-a284-c70bc4dfce17",
+  "rootParentId": "4a35cf33-e446-4b2b-a284-c70bc4dfce17",
+  "name": "Followup Trivia",
+  "auto": true,
+  "contexts": [
+    "choose_fact-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "tell_fact",
+      "affectedContexts": [
+        {
+          "name": "choose_fact-followup",
+          "parameters": {},
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "required": true,
+          "dataType": "@fact-category",
+          "name": "fact-category",
+          "value": "$fact-category",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": []
+}

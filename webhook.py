@@ -20,8 +20,8 @@ def deeplink_unknown():
     return ask(speech)
 
 
-@assist.action('trivia')
-@assist.action('followup_trivia')
+@assist.action('Trivia')
+@assist.action('Followup Trivia')
 def tell_fact():
     facts = ['R.I.T was founded in 1829.', 'R.I.T\'s president is David C. Munson.',
              'Prior to 1955, athletic teams referred to themselves as The Techmen or The Blue Grey.']
@@ -29,7 +29,7 @@ def tell_fact():
     return ask(speech)
 
 
-@assist.action('majors')
+@assist.action('Majors')
 def tell_majors():
     speech = 'These are Majors my dude'
     return ask(speech)

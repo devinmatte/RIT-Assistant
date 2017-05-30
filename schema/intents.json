@@ -1,112 +1,112 @@
 [
     {
-        "templates": [],
-        "priority": 500000,
-        "auto": true,
-        "id": null,
-        "webhookUsed": true,
         "responses": [
             {
-                "parameters": [],
-                "messages": [],
-                "affectedContexts": [],
-                "action": "tell_fact",
-                "resetContexts": false
-            }
-        ],
-        "fallbackIntent": false,
-        "webhookForSlotFilling": true,
-        "events": [],
-        "userSays": [],
-        "contexts": [],
-        "name": "choose_fact"
-    },
-    {
-        "templates": [],
-        "priority": 500000,
-        "auto": true,
-        "id": null,
-        "webhookUsed": true,
-        "responses": [
-            {
-                "parameters": [],
-                "messages": [],
-                "affectedContexts": [],
                 "action": "tell_majors",
-                "resetContexts": false
+                "affectedContexts": [],
+                "parameters": [],
+                "resetContexts": false,
+                "messages": []
             }
         ],
-        "fallbackIntent": false,
-        "webhookForSlotFilling": true,
         "events": [],
+        "webhookUsed": true,
+        "auto": true,
         "userSays": [],
-        "contexts": [],
-        "name": "majors"
+        "webhookForSlotFilling": true,
+        "fallbackIntent": false,
+        "id": null,
+        "priority": 500000,
+        "templates": [],
+        "name": "Majors",
+        "contexts": []
     },
     {
-        "templates": [],
-        "priority": 500000,
-        "auto": true,
-        "id": null,
-        "webhookUsed": true,
         "responses": [
             {
-                "parameters": [],
-                "messages": [],
-                "affectedContexts": [],
-                "action": "deeplink_unknown",
-                "resetContexts": false
-            }
-        ],
-        "fallbackIntent": false,
-        "webhookForSlotFilling": true,
-        "events": [],
-        "userSays": [],
-        "contexts": [],
-        "name": "Unrecognized Deep Link Fallback"
-    },
-    {
-        "templates": [],
-        "priority": 500000,
-        "auto": true,
-        "id": null,
-        "webhookUsed": true,
-        "responses": [
-            {
-                "parameters": [],
-                "messages": [],
-                "affectedContexts": [],
-                "action": "tell_fact",
-                "resetContexts": false
-            }
-        ],
-        "fallbackIntent": false,
-        "webhookForSlotFilling": true,
-        "events": [],
-        "userSays": [],
-        "contexts": [],
-        "name": "tell_fact"
-    },
-    {
-        "templates": [],
-        "priority": 500000,
-        "auto": true,
-        "id": null,
-        "webhookUsed": true,
-        "responses": [
-            {
-                "parameters": [],
-                "messages": [],
-                "affectedContexts": [],
                 "action": "input_welcome",
-                "resetContexts": false
+                "affectedContexts": [],
+                "parameters": [],
+                "resetContexts": false,
+                "messages": []
             }
         ],
-        "fallbackIntent": false,
-        "webhookForSlotFilling": true,
         "events": [],
+        "webhookUsed": true,
+        "auto": true,
         "userSays": [],
-        "contexts": [],
-        "name": "Default Welcome Intent"
+        "webhookForSlotFilling": true,
+        "fallbackIntent": false,
+        "id": null,
+        "priority": 500000,
+        "templates": [],
+        "name": "Default Welcome Intent",
+        "contexts": []
+    },
+    {
+        "responses": [
+            {
+                "action": "tell_fact",
+                "affectedContexts": [],
+                "parameters": [],
+                "resetContexts": false,
+                "messages": []
+            }
+        ],
+        "events": [],
+        "webhookUsed": true,
+        "auto": true,
+        "userSays": [],
+        "webhookForSlotFilling": true,
+        "fallbackIntent": false,
+        "id": null,
+        "priority": 500000,
+        "templates": [],
+        "name": "Trivia",
+        "contexts": []
+    },
+    {
+        "responses": [
+            {
+                "action": "tell_fact",
+                "affectedContexts": [],
+                "parameters": [],
+                "resetContexts": false,
+                "messages": []
+            }
+        ],
+        "events": [],
+        "webhookUsed": true,
+        "auto": true,
+        "userSays": [],
+        "webhookForSlotFilling": true,
+        "fallbackIntent": false,
+        "id": null,
+        "priority": 500000,
+        "templates": [],
+        "name": "Followup Trivia",
+        "contexts": []
+    },
+    {
+        "responses": [
+            {
+                "action": "deeplink_unknown",
+                "affectedContexts": [],
+                "parameters": [],
+                "resetContexts": false,
+                "messages": []
+            }
+        ],
+        "events": [],
+        "webhookUsed": true,
+        "auto": true,
+        "userSays": [],
+        "webhookForSlotFilling": true,
+        "fallbackIntent": false,
+        "id": null,
+        "priority": 500000,
+        "templates": [],
+        "name": "Unrecognized Deep Link Fallback",
+        "contexts": []
     }
 ]

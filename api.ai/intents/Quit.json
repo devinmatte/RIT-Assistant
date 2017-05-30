@@ -52,7 +52,7 @@
     }
   ],
   "id": "9c34a7d6-d9d4-4ddf-96b0-0ced82679c95",
-  "name": "quit_facts",
+  "name": "Quit",
   "auto": true,
   "contexts": [],
   "responses": [
