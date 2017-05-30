@@ -1,90 +1,112 @@
 [
     {
-        "name": "Unrecognized Deep Link Fallback",
-        "id": null,
-        "auto": true,
-        "fallbackIntent": false,
-        "userSays": [],
-        "contexts": [],
-        "events": [],
         "templates": [],
         "priority": 500000,
-        "webhookForSlotFilling": true,
+        "auto": true,
+        "id": null,
         "webhookUsed": true,
         "responses": [
             {
-                "resetContexts": false,
                 "parameters": [],
-                "affectedContexts": [],
-                "action": "deeplink_unknown",
-                "messages": []
-            }
-        ]
-    },
-    {
-        "name": "majors",
-        "id": null,
-        "auto": true,
-        "fallbackIntent": false,
-        "userSays": [],
-        "contexts": [],
-        "events": [],
-        "templates": [],
-        "priority": 500000,
-        "webhookForSlotFilling": true,
-        "webhookUsed": true,
-        "responses": [
-            {
-                "resetContexts": false,
-                "parameters": [],
-                "affectedContexts": [],
-                "action": "tell_majors",
-                "messages": []
-            }
-        ]
-    },
-    {
-        "name": "Default Welcome Intent",
-        "id": null,
-        "auto": true,
-        "fallbackIntent": false,
-        "userSays": [],
-        "contexts": [],
-        "events": [],
-        "templates": [],
-        "priority": 500000,
-        "webhookForSlotFilling": true,
-        "webhookUsed": true,
-        "responses": [
-            {
-                "resetContexts": false,
-                "parameters": [],
-                "affectedContexts": [],
-                "action": "input_welcome",
-                "messages": []
-            }
-        ]
-    },
-    {
-        "name": "choose_fact",
-        "id": null,
-        "auto": true,
-        "fallbackIntent": false,
-        "userSays": [],
-        "contexts": [],
-        "events": [],
-        "templates": [],
-        "priority": 500000,
-        "webhookForSlotFilling": true,
-        "webhookUsed": true,
-        "responses": [
-            {
-                "resetContexts": false,
-                "parameters": [],
+                "messages": [],
                 "affectedContexts": [],
                 "action": "tell_fact",
-                "messages": []
+                "resetContexts": false
             }
-        ]
+        ],
+        "fallbackIntent": false,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "userSays": [],
+        "contexts": [],
+        "name": "choose_fact"
+    },
+    {
+        "templates": [],
+        "priority": 500000,
+        "auto": true,
+        "id": null,
+        "webhookUsed": true,
+        "responses": [
+            {
+                "parameters": [],
+                "messages": [],
+                "affectedContexts": [],
+                "action": "tell_majors",
+                "resetContexts": false
+            }
+        ],
+        "fallbackIntent": false,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "userSays": [],
+        "contexts": [],
+        "name": "majors"
+    },
+    {
+        "templates": [],
+        "priority": 500000,
+        "auto": true,
+        "id": null,
+        "webhookUsed": true,
+        "responses": [
+            {
+                "parameters": [],
+                "messages": [],
+                "affectedContexts": [],
+                "action": "deeplink_unknown",
+                "resetContexts": false
+            }
+        ],
+        "fallbackIntent": false,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "userSays": [],
+        "contexts": [],
+        "name": "Unrecognized Deep Link Fallback"
+    },
+    {
+        "templates": [],
+        "priority": 500000,
+        "auto": true,
+        "id": null,
+        "webhookUsed": true,
+        "responses": [
+            {
+                "parameters": [],
+                "messages": [],
+                "affectedContexts": [],
+                "action": "tell_fact",
+                "resetContexts": false
+            }
+        ],
+        "fallbackIntent": false,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "userSays": [],
+        "contexts": [],
+        "name": "tell_fact"
+    },
+    {
+        "templates": [],
+        "priority": 500000,
+        "auto": true,
+        "id": null,
+        "webhookUsed": true,
+        "responses": [
+            {
+                "parameters": [],
+                "messages": [],
+                "affectedContexts": [],
+                "action": "input_welcome",
+                "resetContexts": false
+            }
+        ],
+        "fallbackIntent": false,
+        "webhookForSlotFilling": true,
+        "events": [],
+        "userSays": [],
+        "contexts": [],
+        "name": "Default Welcome Intent"
     }
 ]

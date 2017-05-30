@@ -1,5 +1,6 @@
 from flask import Flask
-from flask_assistant import Assistant, ask
+from flask_assistant import Assistant, ask, tell
+import random
 
 app = Flask(__name__)
 assist = Assistant(app, '/')
@@ -19,10 +20,12 @@ def deeplink_unknown():
     return ask(speech)
 
 
-@assist.action('choose_fact')
+@assist.action('trivia')
+@assist.action('followup_trivia')
 def tell_fact():
-    speech = 'FOUNDED IN 1829, Rochester Institute of Technology is a privately endowed, ' \
-             'coeducational university with nine colleges emphasizing career education and experiential learning.'
+    facts = ['R.I.T was founded in 1829.', 'R.I.T\'s president is David C. Munson.',
+             'Prior to 1955, athletic teams referred to themselves as The Techmen or The Blue Grey.']
+    speech = random.choice(facts) + ' What else do you want to know about?'
     return ask(speech)
 
 
