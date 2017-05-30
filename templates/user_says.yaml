@@ -12,7 +12,28 @@
 
 
 
-input.welcome:
+Unrecognized Deep Link Fallback:
+  UserSays:
+  - 
+  - 
+  Annotations:
+  - 
+  - 
+majors:
+  UserSays:
+  - 
+  - 
+  Annotations:
+  - 
+  - 
+Default Welcome Intent:
+  UserSays:
+  - 
+  - 
+  Annotations:
+  - 
+  - 
+choose_fact:
   UserSays:
   - 
   - 

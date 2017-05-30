@@ -34,8 +34,8 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
-  "webhookForSlotFilling": true,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
   "fallbackIntent": true,
   "events": []
 }

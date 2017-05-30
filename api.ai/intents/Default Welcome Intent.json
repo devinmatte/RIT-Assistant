@@ -7,7 +7,7 @@
   "responses": [
     {
       "resetContexts": false,
-      "action": "input.welcome",
+      "action": "input_welcome",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
@@ -25,7 +25,7 @@
         },
         {
           "type": 0,
-          "speech": "Welcome to R.I.T Assistant! How can I help you?"
+          "speech": []
         }
       ],
       "defaultResponsePlatforms": [
@@ -34,8 +34,8 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": false,
-  "webhookForSlotFilling": false,
+  "webhookUsed": true,
+  "webhookForSlotFilling": true,
   "fallbackIntent": false,
   "events": [
     {

@@ -27,9 +27,9 @@
     "capabilities": [],
     "protocolVersion": "V2"
   },
-  "defaultTimezone": "",
+  "defaultTimezone": "America/New_York",
   "webhook": {
-    "url": "https://us-central1-rit-assistant.cloudfunctions.net/RITAssistant",
+    "url": "https://3e8986db.ngrok.io",
     "headers": {
       "": ""
     },

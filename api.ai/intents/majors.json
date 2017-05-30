@@ -85,7 +85,7 @@
   "responses": [
     {
       "resetContexts": false,
-      "action": "tell.majors",
+      "action": "tell_majors",
       "affectedContexts": [],
       "parameters": [
         {

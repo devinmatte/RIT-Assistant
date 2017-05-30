@@ -1,6 +1,22 @@
 {
   "userSays": [
     {
+      "id": "fb15cda7-468b-4210-8e10-696e074ed44f",
+      "data": [
+        {
+          "text": "tell me "
+        },
+        {
+          "text": "trivia",
+          "alias": "category",
+          "meta": "@fact-category",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0
+    },
+    {
       "id": "24545413-d91c-43c2-84f8-75cde3d24e70",
       "data": [
         {
@@ -157,7 +173,7 @@
   "responses": [
     {
       "resetContexts": false,
-      "action": "tell.fact",
+      "action": "tell_fact",
       "affectedContexts": [
         {
           "name": "choose_fact-followup",

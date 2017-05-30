@@ -9,7 +9,7 @@
   "responses": [
     {
       "resetContexts": false,
-      "action": "deeplink.unknown",
+      "action": "deeplink_unknown",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
